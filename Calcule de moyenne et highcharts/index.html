@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="highcharts.src.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="titre">Mes resultats au BTS</div>
+
+    <div id="G_C">
+
+        <div class="contenere" id="test">
+            <div class="titre-contenere-camenber" >Resultat du BTS SNIR</div>
+            <div id="contenere-camenber"></div>
+            <div id="conterner-list-matiere">
+                
+            </div>
+        </div>
+
+
+        <div class="contenere-matiere">
+            <fieldset class="contenere-matiere-generales">
+                <legend class="legends">Matiere generales</legend>
+                
+                <div>
+                    <p class="text-matier">Mathematiques</p>
+                    <input type="number" class ="imput-matier "  id = "Mathematiques"        min="0" max="20" value= "10" >
+                    <input type="number" class ="imput-coeff not-increment"   id = "Mathematiques-coeff"  min="0" value= "1" >
+                    <p class="dispaly-inline-block text-matier-coeff">Coeff</p>
+                </div>
+                
+                
+                <div>
+                    <p class="text-matier">Francais</p>
+                    <input type="number" class ="imput-matier" id = "Francais"          min="0" max="20" value= "10">
+                    <input type="number" class ="imput-coeff not-increment" id = "Francais-coeff"     min="0" value= "1">
+                    <p class="dispaly-inline-block text-matier-coeff">Coeff</p>
+                </div>
+                
+                <div>
+                    <p class="text-matier">Anglais</p>
+                    <input type="number" class ="imput-matier" id = "Anglais"       min="0" max="20" value= "10">
+                    <input type="number" class ="imput-coeff not-increment" id = "Anglais-coeff"  min="0" value= "1">
+                    <p class="dispaly-inline-block text-matier-coeff">Coeff</p>
+                </div>
+                
+            </fieldset>
+            <fieldset class="contenere-matiere-pro">
+                <legend class="legends">Matiere pro</legend>
+
+                <div>
+                    <p class="text-matier">E4 Info</p>
+                    <input type="number" class ="imput-matier" id = "E4" min="0" max="20" value= "10">
+                    <input type="number" class ="imput-coeff not-increment" id = "E4-coeff"     min="0" value= "1">
+                    <p class="dispaly-inline-block text-matier-coeff">Coeff</p>
+                </div>
+
+                <div>
+                    <p class="text-matier">E5 Instal Maintenance</p>
+                    <input type="number" class ="imput-matier" id = "E5" min="0" max="20" value= "10">
+                    <input type="number" class ="imput-coeff not-increment" id = "E5-coeff"     min="0" value= "1">
+                    <p class="dispaly-inline-block text-matier-coeff">Coeff</p>
+                </div>
+
+                <div>
+                    <p class="text-matier">E6.1 Stage</p>
+                    <input type="number" class ="imput-matier" id = "E6_1" min="0" max="20" value= "10">
+                    <input type="number" class ="imput-coeff not-increment" id = "E6_1-coeff"     min="0" value= "1">
+                    <p class="dispaly-inline-block text-matier-coeff">Coeff</p>
+                </div>
+
+                <div>
+                    <p class="text-matier">E6.2 Projet</p>
+                    <input type="number" class ="imput-matier" id = "E6_2" min="0" max="20" value= "10">
+                    <input type="number" class ="imput-coeff not-increment" id = "E6_2-coeff"     min="0" value= "1">
+                    <p class="dispaly-inline-block text-matier-coeff">Coeff</p>
+                </div>
+
+
+                
+                
+               
+                
+            </fieldset>
+            <div id="r">
+                <button onclick="resultat()" id="resultat">Resultat</button>
+            </div>
+            
+        </div>
+
+       
+
+
+    </div>
+    <div class="display-resultat"> 
+        <p class="test"> Votre resultat est :</p>
+        <p class="test-1">Admis.</p>
+    </div>
+
+</body>
+</html>

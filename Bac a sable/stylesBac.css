@@ -1,0 +1,125 @@
+:root{
+    --Global-first-columns-size : 45%;
+}
+
+body{
+    background-color: burlywood;
+}
+
+
+.container{
+
+    width: 99% ;
+    height: 98.5% ;
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: var(--Global-first-columns-size) auto;
+    grid-template-rows: 5% 40% 5% 40% 5% ;
+    grid-template-areas: 
+    "h-html h-out"
+    "Html out"
+    "h-css h-js"
+    "Css js"
+    "autre autre"
+    ;
+    grid-gap: 5px;
+}
+.h-html {
+    position: relative;
+    grid-area: h-html ;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: cadetblue;
+
+
+}
+#html{
+
+    grid-area:Html;
+    overflow-y:auto;
+    background-color:  black;
+    color: green;
+
+
+}
+.h-css{
+
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5em;
+    grid-area:h-css;
+    background-color: cadetblue;
+}
+#css{
+
+    overflow-y:auto;
+
+    grid-area:Css;
+    background-color:  black;
+    color: green;
+   
+
+}
+.h-out{
+    font-weight: bold;
+    font-size: 1.5em;
+    grid-area:h-out;
+   
+    background-color: cadetblue;
+
+}
+
+#js {
+
+    grid-area:js;
+    overflow-y:auto;
+    background-color:  black;
+    color: green;
+}
+
+.t-js {
+    grid-area:h-js;
+
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: cadetblue;
+}
+
+#output{
+
+    grid-area:out;
+    width:100% ;
+    height: 100% ;
+    background-color: white;
+
+}
+.autre{
+
+    grid-area:autre;
+    position: relative;
+    background-color: cadetblue;
+    
+
+}
+
+
+
+.delete {
+
+    position: absolute;
+    right: 1%;
+    top: 15%;
+
+}
+
+#get-text {
+
+    font-size: small;
+    resize: none;
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+
+}

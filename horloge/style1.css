@@ -1,0 +1,71 @@
+.fleche {
+
+    --fleche-width: 100px ;
+    --felche-ration-width-height:5;
+    --fleche-height: calc( var(--fleche-width)*var(--felche-ration-width-height) );
+    --fleche-body-width: 25px  ;
+    --fleche-booy-height: 350px ;
+    --fleche-tete-color: rgb(0, 0, 0) ; 
+    --fleche-body-color: rgb(255, 0, 0) ; 
+    --fleche-base-color: rgb(0, 0, 0) ; 
+
+
+    position: absolute;
+    border: 0.1px solid black;
+    width:var(--fleche-width) ;
+    height:var(--fleche-height) ;
+
+    transform-origin:calc(var(--fleche-width)/2) calc(var(--fleche-height) - var(--fleche-width)/2 )  ;
+    transform: rotate(0deg);
+
+}
+
+.fleche-tete {
+    position: absolute;
+    left: calc(  var(--fleche-width)/4 - var(--fleche-width)/4 ) ;
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : calc(  var(--fleche-width)/2) solid transparent;
+    border-bottom : calc(  var(--fleche-width)) solid var(--fleche-tete-color);
+    border-left : calc(  var(--fleche-width)/2) solid transparent;
+
+}
+
+
+
+.fleche-body {
+    position: absolute;
+    width:calc(var(--fleche-width)/4);
+    height:calc(var(--fleche-height) - var(--fleche-width) );
+    background-color: var(--fleche-body-color);
+    left: calc(  var(--fleche-width)/2 - var(--fleche-width)/4/2 ) ;
+    top: var(--fleche-width)/2;
+    bottom: calc(var(--fleche-width)/2) ;
+}
+
+
+.fleche-body-2 {
+    position: absolute;
+    height : 0;
+    width : 0;
+    left: calc(  var(--fleche-width)/2 - var(--fleche-width)/4 ) ;
+    top: var(--fleche-width)/2;
+    bottom: calc(var(--fleche-width)/2) ;
+
+    border-right : calc(  var(--fleche-width)/4) solid transparent;
+    border-bottom : calc( var(--fleche-height) - var(--fleche-width) ) solid var(--fleche-body-color);
+    border-left : calc(  var(--fleche-width)/4) solid transparent;
+}
+
+
+.fleche-base {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: var(--fleche-base-color);
+    width: var(--fleche-width);
+    height: var(--fleche-width);
+    border-radius: 50%;
+    top: calc( var(--fleche-height) - var(--fleche-width)) ;
+}
+

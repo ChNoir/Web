@@ -1,0 +1,128 @@
+table {
+    border-collapse: collapse;
+    height: 50%;
+}
+
+table tr *{
+    padding: 5px;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+#col_pays{
+    width: 300px;
+    height: 20px;
+    padding: 0px;
+}
+
+.case_nembre {
+    font-size: medium;
+    font-family:Arial;
+    text-align: center;
+    
+
+    width: 75px;
+    height: 30px;
+   
+}
+
+.case_nembre_toto {
+
+    color:black;
+    background-color: gold;
+
+    font-size: medium;
+    font-family:Arial;
+    font-weight: bold;
+    text-align: center;
+
+    
+    width: 75px;
+    height: 30px;
+}
+
+.case_ling_nember {
+
+    color: white;
+    background-color: black;
+
+    font-size:x-large;
+    font-family:Arial;
+    font-weight: bold;
+    text-align: center;
+
+    width: 50px;
+    height: 20px;
+    padding: 0px;
+}
+
+
+.case_black {
+
+    color: white;
+    background-color: black;
+
+    font-size:x-large;
+    font-family:Arial;
+    font-weight: bold;
+    text-align: center;
+
+    width: 100px;
+    height: 30px;
+    border : none ;
+}
+.case_green {
+
+    color: white;
+    background-color: green;
+
+    font-size:x-large;
+    font-family:Arial;
+    font-weight: bold;
+    text-align: center;
+
+    border : none ;
+    padding: 5px;
+
+}
+
+.flag {
+
+    border-right:  0px solid white ;
+   
+    padding: 0px;
+
+    width: 50px;
+    height: 30px;
+   
+    
+}
+tr:hover td {
+    background-color: gray;
+    
+}
+
+ tr:hover .case_nembre_toto {
+    background-color: gray ;
+    color: blue;
+    
+}
+
+
+
+.name  {
+
+    
+   
+    border-left: 0px solid white ;
+
+    font-size: medium;
+    font-family:Arial;
+    text-align:left;
+    padding: 0px;
+
+}
+
+
