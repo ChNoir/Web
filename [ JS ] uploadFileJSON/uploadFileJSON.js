@@ -1,5 +1,5 @@
 
-var Data ;
+var uploadData ;
 
 function onChange(event) {
     console.log(data)
@@ -10,9 +10,9 @@ function onChange(event) {
 }
 
 function onReaderLoad(event){
-    Data = JSON.parse(event.target.result);
+    uploadData = JSON.parse(event.target.result);
     document.getElementById('uploadJSON').value = "";
-    // console.log(Data);
+    // console.log(uploadData);
 }
 
 // Dans window.onload pour definire l'événement de chargement du fichie JSON
@@ -25,7 +25,7 @@ document.getElementById('uploadJSON').addEventListener('change', onChange);
 // il y a besion d'un seul input pour tou 
 //
 // <input type="file" id="uploadJSON" accept=".json" style="display : none;"></input>
-// <label for="uploadJSON" >lol</label>
+// <label for="uploadJSON" >uploadJSON</label>
 //
 
 
